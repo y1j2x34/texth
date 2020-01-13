@@ -1,12 +1,12 @@
 {
-    "name": "rollup-ts-karma-mocha-chai-boilerplate",
+    "name": "texth",
     "version": "1.0.0",
-    "description": "boilerplate project: typescript, rollup + karma + mocha + chai",
+    "description": "Split text based on CSS rendering effect",
     "main": "dist/index.cjs.js",
     "module": "dist/index.esm.js",
     "browser": "dist/index.umd.js",
     "distDir": "dist/",
-    "library": "demo",
+    "library": "texth",
     "engines": {
         "node": ">=8.0"
     },

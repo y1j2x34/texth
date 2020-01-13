@@ -4,6 +4,7 @@ const path = require('path');
 const plugins = require('./build/rollup.plugins');
 const rollupPluginIstanbul = require('rollup-plugin-istanbul');
 const baseConfig = require('./karma.base.conf');
+const pkg = require('./package.json');
 
 module.exports = function (config) {
     const coverageIstanbulReporter = {
@@ -42,7 +43,7 @@ module.exports = function (config) {
             watch: false,
             output: {
                 format: 'iife',
-                name: 'RMI',
+                name: pkg.library,
                 sourcemap: false
             },
             plugins: rollupPlugins,

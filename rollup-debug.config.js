@@ -1,4 +1,5 @@
 const plugins = require('./build/rollup.plugins');
+const pkg = require('./package.json');
 
 const rollupPlugins = [
     plugins.typescript({
@@ -24,7 +25,7 @@ module.exports = {
     watch: true,
     output: {
         format: 'iife',
-        name: 'RMI',
+        name: pkg.library,
         sourcemap: 'inline'
     },
     plugins: rollupPlugins,
