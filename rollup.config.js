@@ -23,16 +23,16 @@ module.exports = [
             [pkg.main, 'cjs']
         ].map(confs => createOutputConfig(...confs)),
         plugins: [
-            plugins.nodeResolve({
-                main: true,
-                browser: true,
-                module: true
-            }),
-            plugins.commonjs({
-                include: 'node_modules/**',
-                ignore: ['js-base64'],
-                sourceMap: false
-            }),
+            // plugins.nodeResolve({
+            //     main: true,
+            //     browser: true,
+            //     module: true
+            // }),
+            // plugins.commonjs({
+            //     include: 'node_modules/**',
+            //     ignore: ['js-base64'],
+            //     sourceMap: false
+            // }),
             plugins.strip(),
             plugins.typescript()
         ],

@@ -7,11 +7,16 @@ module.exports = {
 
     restartBrowserBetweenTests: false,
 
-    files: ['test/specs/**/*.spec.ts', {
+    files: [{
+        pattern: 'test/specs/**/*.spec.ts',
+        served: true,
+        included: true,
+        watched: false
+    }, {
         pattern: 'src/**/*.ts',
         served: true,
         included: false,
-        watched: true
+        watched: false
     }],
 
     mime: {

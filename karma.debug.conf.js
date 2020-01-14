@@ -21,9 +21,10 @@ module.exports = function (config) {
             'karma-mocha',
             'karma-chai',
             'karma-mocha-reporter',
-            'karma-rollup-preprocessor',
+            '@vgerbot/karma-rollup-preprocessor',
             'karma-sourcemap-loader'
         ],
-        singleRun: false
+        singleRun: false,
+        autoWatch: true
     });
 };
